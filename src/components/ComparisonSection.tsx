@@ -20,7 +20,7 @@ export function ComparisonSection() {
           }, 20);
         }
       });
-    }, { threshold: 0.4 });
+    }, { threshold: 0.1 });
     if (comparisonRef.current) obs.observe(comparisonRef.current);
     return () => obs.disconnect();
   }, []);
